@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav th:replace="fragments/navbar"></nav>
+    </header>
+    <img class="fox-img" src="greenfox.png" alt="fox image">
+    <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} + '. He knows ' + ${numberOfTricks} + ' tricks.'"></p>
+    <h3>Known Tricks</h3>
+    <p th:unless = "${trickList.size()}>0">You know no tricks, yet. Go and learn some.</p>
+    <ul class= "list" th:object="${trickList}">
+        <li th:each = "trick : ${trickList}" th:text = "${trick}"></li>
+    </ul>
+</body>
+</html>

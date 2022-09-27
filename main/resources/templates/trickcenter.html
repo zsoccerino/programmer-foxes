@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trick Center</title>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+    <nav th:replace="fragments/navbar"></nav>
+    <form class="form" th:action="'/trickcenter?name=' + ${name}" method="post">
+        <label for="trick">Tricks</label>
+        <select name="trick" id="trick">
+            <option value="write HTML">write HTML</option>
+            <option value="write Java">write Java</option>
+            <option value="write PHP">write PHP</option>
+        </select>
+        <input type="submit" value="Learn">
+    </form>
+</body>
+</html>

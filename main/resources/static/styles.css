@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color: #e0e0e0;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+.fox-img {
+    margin-top: 20px;
+}
+.form {
+    margin-top: 20px;
+}
+.list {
+    width: 18%;
+    margin: auto;
+    text-align: left;
+}
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #333;
+}
+.navbar a {
+    color: #e0e0e0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background-color: #e0e0e0;
+    color: #2a110a;
+}
